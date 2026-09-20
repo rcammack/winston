@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import './App.css'
 
 const birthday = new Date(2025, 1, 23)
@@ -194,7 +194,33 @@ function App() {
     communicationCommands[0],
   )
   const [openPhoto, setOpenPhoto] = useState<GalleryPhoto | null>(null)
+  const lightboxRef = useRef<HTMLDialogElement>(null)
+  const lastPhotoTriggerRef = useRef<HTMLButtonElement | null>(null)
+  const usefulCommandsRef = useRef<HTMLDivElement>(null)
+  const trickCommandsRef = useRef<HTMLDivElement>(null)
   const visibleCommand = hoveredCommand ?? selectedCommand
+
+  useEffect(() => {
+    if (openPhoto && !lightboxRef.current?.open) {
+      lightboxRef.current?.showModal()
+    }
+  }, [openPhoto])
+
+  const closePhoto = () => {
+    lightboxRef.current?.close()
+  }
+
+  const scrollCommandList = (
+    list: HTMLDivElement | null,
+    direction: -1 | 1,
+  ) => {
+    list?.scrollBy({
+      left: direction * 220,
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        ? 'auto'
+        : 'smooth',
+    })
+  }
 
   const renderCommand = (command: Command) => {
     const isSelected = selectedCommand?.name === command.name
@@ -236,7 +262,7 @@ function App() {
           <div className="hero-copy">
             <p className="eyebrow">Professional good boy</p>
             <h1 id="hero-title">
-              Hi, I’m <span>Winston.</span>
+              Hi, I’m <span className="hero-name">Winston.</span>
             </h1>
             <p className="hero-intro">
               My owner is a crazy dog mom who made this website for me. Looking
@@ -334,14 +360,58 @@ function App() {
           <div className="command-panel">
             <div className="command-group">
               <h3>Useful commands</h3>
-              <div className="skill-list" aria-label="Useful commands for Winston">
-                {communicationCommands.map(renderCommand)}
+              <div className="scrolling-skill-list">
+                <button
+                  className="scroll-button"
+                  type="button"
+                  aria-label="Scroll useful commands left"
+                  onClick={() => scrollCommandList(usefulCommandsRef.current, -1)}
+                >
+                  ←
+                </button>
+                <div
+                  className="skill-list"
+                  aria-label="Useful commands for Winston"
+                  ref={usefulCommandsRef}
+                >
+                  {communicationCommands.map(renderCommand)}
+                </div>
+                <button
+                  className="scroll-button"
+                  type="button"
+                  aria-label="Scroll useful commands right"
+                  onClick={() => scrollCommandList(usefulCommandsRef.current, 1)}
+                >
+                  →
+                </button>
               </div>
             </div>
             <div className="command-group">
               <h3>Tricks for treats</h3>
-              <div className="skill-list" aria-label="Winston's tricks">
-                {trickCommands.map(renderCommand)}
+              <div className="scrolling-skill-list">
+                <button
+                  className="scroll-button"
+                  type="button"
+                  aria-label="Scroll tricks left"
+                  onClick={() => scrollCommandList(trickCommandsRef.current, -1)}
+                >
+                  ←
+                </button>
+                <div
+                  className="skill-list"
+                  aria-label="Winston's tricks"
+                  ref={trickCommandsRef}
+                >
+                  {trickCommands.map(renderCommand)}
+                </div>
+                <button
+                  className="scroll-button"
+                  type="button"
+                  aria-label="Scroll tricks right"
+                  onClick={() => scrollCommandList(trickCommandsRef.current, 1)}
+                >
+                  →
+                </button>
               </div>
             </div>
             <div className="command-detail" role="status">
@@ -366,7 +436,10 @@ function App() {
                 type="button"
                 key={photo.src}
                 aria-label={`Open ${photo.alt}`}
-                onClick={() => setOpenPhoto(photo)}
+                onClick={(event) => {
+                  lastPhotoTriggerRef.current = event.currentTarget
+                  setOpenPhoto(photo)
+                }}
               >
                 <img
                   src={`${import.meta.env.BASE_URL}${photo.src}`}
@@ -403,24 +476,26 @@ function App() {
         <a href="#top">Back to top ↑</a>
       </footer>
 
-      {openPhoto && (
-        <div
-          className="lightbox"
-          role="dialog"
-          aria-modal="true"
-          aria-label={openPhoto.alt}
-          onClick={() => setOpenPhoto(null)}
-          onKeyDown={(event) => {
-            if (event.key === 'Escape') setOpenPhoto(null)
-          }}
-        >
-          <div className="lightbox-content" onClick={(event) => event.stopPropagation()}>
+      <dialog
+        className="lightbox"
+        ref={lightboxRef}
+        aria-label={openPhoto?.alt ?? 'Photo viewer'}
+        onClick={(event) => {
+          if (event.target === event.currentTarget) closePhoto()
+        }}
+        onClose={() => {
+          setOpenPhoto(null)
+          requestAnimationFrame(() => lastPhotoTriggerRef.current?.focus())
+        }}
+      >
+        {openPhoto && (
+          <div className="lightbox-content">
             <button
               className="lightbox-close"
               type="button"
               aria-label="Close photo"
               autoFocus
-              onClick={() => setOpenPhoto(null)}
+              onClick={closePhoto}
             >
               ×
             </button>
@@ -429,8 +504,8 @@ function App() {
               alt={openPhoto.alt}
             />
           </div>
-        </div>
-      )}
+        )}
+      </dialog>
     </>
   )
 }

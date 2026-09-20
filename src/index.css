@@ -7,6 +7,8 @@
   --orange: #ec6b3b;
   --orange-dark: #bd4822;
   --pink: #f7b8ac;
+  --section-column-gap: 48px;
+  --section-content-gap: 24px;
   --yellow: #f4ce68;
   --body: 'Segoe UI', sans-serif;
   --display: 'Arial Rounded MT Bold', 'Trebuchet MS', sans-serif;
@@ -24,12 +26,18 @@
 }
 
 html {
+  min-height: 100%;
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
+  min-height: 100dvh;
   min-width: 320px;
+}
+
+#root {
+  min-height: 100dvh;
 }
 
 a,
