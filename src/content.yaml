@@ -1,0 +1,233 @@
+site:
+  brand: "Winston"
+
+profile:
+  - title: "Age"
+    value: "2025-02-23"
+    calculate_age: true
+  - title: "Weight"
+    value: "13 lbs"
+  - title: "Potty breaks"
+    value: "Every 4–5 hours"
+  - title: "Training"
+    value: "Crate & house trained"
+  - title: "Neutered"
+    value: "Yes"
+  - title: "Microchipped"
+    value: "Yes"
+
+# HERO SECTION — displayed with the red header "Professional good boy"
+hero:
+  greeting: "Hi, I’m"
+  name: "Winston."
+  intro: >-
+    My owner is a crazy dog mom who made this website for me. Looking for a
+    kind sitter who will keep my tail wagging.
+  care_button: "Read my care guide"
+  contact_button: "Contact my humans"
+  image: "winston.png"
+  image_description: "Winston, a happy dog"
+
+# ABOUT SECTION — displayed with the red header "A little about me"
+about:
+  heading: "Easygoing, curious, and always up for company."
+  description: >-
+    Winston is a friendly, medium-energy mix of Miniature Poodle, Pomeranian,
+    Papillon, and Bichon Frise. He loves fetch and happily accepts pets from
+    anyone, including strangers. His excitement can come out as barking or
+    overly enthusiastic behavior, so calm, attentive handling helps him feel
+    secure.
+  traits:
+    - "Loves fetch"
+    - "House trained"
+    - "Knows drop it & leave it"
+    - "Crate trained"
+    - "Neutered"
+    - "Microchipped"
+
+# CARE GUIDE SECTION — displayed with the red header "The important stuff"
+care:
+  heading: "Winston’s care guide"
+  description: "Everything you need for a happy, low-stress stay."
+  cards:
+    - image: null
+      emoji: "🥣"
+      title: "Meals"
+      text: >-
+        Feed 1/4 cup of kibble twice a day—once in the morning and once in the
+        evening.
+
+    - image: null
+      emoji: "🚫"
+      title: "Elimination diet"
+      text: >-
+        No chicken, beef, lamb, dairy, or wheat, including in treats. He is on
+        an elimination diet because he has been itchy and licking his paws.
+
+    - image: null
+      emoji: "🦮"
+      title: "Potty breaks"
+      text: >-
+        Take him out every 4–5 hours. He does not whine or otherwise signal
+        when he needs to pee, so do not wait for him to ask.
+
+    - image: null
+      emoji: "🏠"
+      title: "House training"
+      text: >-
+        He is house trained, but fuzzy carpet may confuse him. If another dog
+        has peed indoors, he may try to mark that spot.
+
+    - image: null
+      emoji: "💤"
+      title: "Crate routine"
+      text: >-
+        He sleeps in his crate overnight. He also takes a 2–3 hour crate nap
+        around 5–7 PM, or after his evening walk.
+
+    - image: null
+      emoji: "🚪"
+      title: "Separation anxiety"
+      text: >-
+        He has separation anxiety. His daily evening crate nap is his trained
+        window for being home alone while you run errands, eat out, or work out.
+
+    - image: null
+      emoji: "🐕"
+      title: "Other dogs"
+      text: >-
+        He is friendly with most dogs and may bark from excitement, but do not
+        let him play with them. Avoid on-leash greetings because the hands-free
+        leash tangles easily.
+
+    - image: null
+      emoji: "🦺"
+      title: "Harness only"
+      text: >-
+        Never use a collar. His breed mix is prone to collapsed trachea, so
+        always attach his leash to a harness.
+
+    - image: null
+      emoji: "👟"
+      title: "Overexcitement on walks"
+      text: >-
+        When he gets too excited or exhausted during a walk, he may attack
+        shoes, slippers, or feet—especially while crossing the street. Watch
+        for overstimulation and keep crossings controlled.
+
+    - image: null
+      emoji: "👧"
+      title: "Children & cats"
+      text: >-
+        He loves children and regularly sees a 3-year-old, but can get too
+        excited around them. His behavior with cats is unknown because he has
+        never been introduced to one.
+
+    - image: null
+      emoji: "🧻"
+      title: "Resource guarding"
+      text: >-
+        He may guard stolen items such as used tissues. Read his body language
+        and do not take things away unless it is an emergency. Prevent access
+        and use “drop it” or “leave it.”
+
+    - image: null
+      emoji: "⚠️"
+      title: "Pain response"
+      text: >-
+        His default response to pain, including being accidentally stepped on,
+        is to growl rather than whine. Give him space and pay attention to his
+        body language.
+
+    - image: null
+      emoji: "🚗"
+      title: "Car rides"
+      text: >-
+        Always put him in the back seat and secure him with his seat belt.
+
+# COMMANDS SECTION — displayed with the red header "Commands Winston knows"
+commands:
+  heading: "Communicating with Winston"
+  description: >-
+    Here are Winston’s most useful commands, including the exact phrase and
+    hand signal to use. Hover or click a command to see more details.
+  detail_prefix: "How to use"
+  useful:
+    - name: "Sit"
+      details: >-
+        Use when Winston needs to pause and focus before the next instruction.
+    - name: "Stay"
+      details: >-
+        Use when Winston needs to remain in place until he is released.
+    - name: "Down"
+      details: "Use when you want Winston to lie down and settle."
+    - name: "Leave it"
+      details: >-
+        Use before he picks up or approaches something he should not have. This
+        is preferable to taking an item away.
+    - name: "Drop it"
+      details: >-
+        Use after he has something in his mouth. Give the cue instead of
+        reaching for the item; only take it directly in an emergency.
+  tricks:
+    - name: "Shake"
+      details: "A just-for-fun paw shake."
+    - name: "Spin"
+      details: "A just-for-fun turn in a circle."
+  other_words: "Okay, walk, food."
+
+# PHOTOS SECTION — displayed with the red header "A little more Winston"
+photos:
+  heading: "Favorite photos"
+  swipe_text: "Swipe to see more →"
+  items:
+    - file: "gallery/puppy-soccer.jpg"
+      description: "Winston as a puppy sitting in the grass with a soccer ball"
+    - file: "gallery/beach-sunset.jpg"
+      description: "Winston sitting on a tree stump at the beach at sunset"
+    - file: "gallery/toy-drumstick.jpg"
+      description: "Winston holding a toy drumstick"
+    - file: "gallery/dog-friend.jpg"
+      description: "Winston sitting in the grass beside another dog"
+    - file: "gallery/birthday.jpg"
+      description: "Winston wearing a birthday hat behind his birthday dinner"
+    - file: "gallery/halloween.jpg"
+      description: "Winston dressed as a witch for Halloween"
+    - file: "gallery/outdoor-closeup.jpg"
+      description: "A close-up of Winston smiling outside"
+    - file: "gallery/christmas.jpg"
+      description: "Winston wearing a Christmas tree hat"
+    - file: "gallery/puppy-beanie.jpg"
+      description: "Winston as a puppy wearing a tiny beanie"
+    - file: "gallery/portrait.jpg"
+      description: "A portrait of Winston smiling"
+
+# CONTACT SECTION — displayed with the red header "Questions or updates?"
+contact:
+  heading: "Important contact information"
+  description: >-
+    For an emergency, contact Winston’s owner using the details provided for
+    his stay, then contact his vet if needed.
+  veterinarian:
+    label: "Veterinarian"
+    name: "Oahu Veterinary Clinic"
+    address: "1347 Kapiolani Blvd, Suite 101, Honolulu, HI 96814"
+    phone_display: "(808) 427-1000"
+    phone_link: "+18084271000"
+footer:
+  message: "Made with lots of treats for Winston."
+
+# YAML EDITING RULES
+# - Use spaces for indentation, never tabs. Keep the existing indentation.
+# - Keep field names such as "title", "text" unchanged.
+# - Short text is quoted so punctuation is read literally.
+# - For paragraphs, keep ">-" on the field line and indent the paragraph below.
+# - A colon followed by a space and a # preceded by a space have special meaning
+#   in unquoted text. Quoted text and ">-" paragraphs avoid those problems.
+# - Leave true and false unquoted when used; they are settings, not text.
+# - Each "-" begins another item in a list.
+# - For a care card image, replace null with a quoted path such as
+#   "cards/meals.jpg". If image is null, the card displays its emoji instead.
+# - Put care card image files in public/cards/.
+# - Image files stay in public/gallery/. The "file" value is the path to an
+#   image, and "description" is the accessible description of that image.

@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import './App.css'
-
-const birthday = new Date(2025, 1, 23)
+import content from './content.yaml'
 
 function getAge(birthDate: Date) {
   const today = new Date()
@@ -25,165 +24,17 @@ function getAge(birthDate: Date) {
   return `${yearLabel}, ${monthLabel}`
 }
 
-const quickFacts = [
-  ['Age', getAge(birthday)],
-  ['Weight', '13 lbs'],
-  ['Potty breaks', 'Every 4–5 hours'],
-  ['Training', 'Crate & house trained'],
-  ['Neutered', 'Yes'],
-  ['Microchipped', 'Yes'],
-]
+const quickFacts = content.profile.map((fact) => {
+  if (!fact.calculate_age) return [fact.title, fact.value]
 
-const careCards = [
-  {
-    icon: '🥣',
-    title: 'Meals',
-    text: 'Feed 1/4 cup of kibble twice a day—once in the morning and once in the evening.',
-  },
-  {
-    icon: '🚫',
-    title: 'Elimination diet',
-    text: 'No chicken, beef, lamb, dairy, or wheat, including in treats. He is on an elimination diet because he has been itchy and licking his paws.',
-    important: true,
-  },
-  {
-    icon: '🦮',
-    title: 'Potty breaks',
-    text: 'Take him out every 4–5 hours. He does not whine or otherwise signal when he needs to pee, so do not wait for him to ask.',
-    important: true,
-  },
-  {
-    icon: '🏠',
-    title: 'House training',
-    text: 'He is house trained, but fuzzy carpet may confuse him. If another dog has peed indoors, he may try to mark that spot.',
-  },
-  {
-    icon: '💤',
-    title: 'Crate routine',
-    text: 'He sleeps in his crate overnight. He also takes a 2–3 hour crate nap around 5–7 PM, or after his evening walk.',
-  },
-  {
-    icon: '🚪',
-    title: 'Separation anxiety',
-    text: 'He has separation anxiety. His daily evening crate nap is his trained window for being home alone while you run errands, eat out, or work out.',
-  },
-  {
-    icon: '🐕',
-    title: 'Other dogs',
-    text: 'He is friendly with most dogs and may bark from excitement, but do not let him play with them. Avoid on-leash greetings because the hands-free leash tangles easily.',
-  },
-  {
-    icon: '🦺',
-    title: 'Harness only',
-    text: 'Never use a collar. His breed mix is prone to collapsed trachea, so always attach his leash to a harness.',
-    important: true,
-  },
-  {
-    icon: '👟',
-    title: 'Overexcitement on walks',
-    text: 'When he gets too excited or exhausted during a walk, he may attack shoes, slippers, or feet—especially while crossing the street. Watch for overstimulation and keep crossings controlled.',
-    important: true,
-  },
-  {
-    icon: '👧',
-    title: 'Children & cats',
-    text: 'He loves children and regularly sees a 3-year-old, but can get too excited around them. His behavior with cats is unknown because he has never been introduced to one.',
-  },
-  {
-    icon: '🧻',
-    title: 'Resource guarding',
-    text: 'He may guard stolen items such as used tissues. Read his body language and do not take things away unless it is an emergency. Prevent access and use “drop it” or “leave it.”',
-    important: true,
-  },
-  {
-    icon: '⚠️',
-    title: 'Pain response',
-    text: 'His default response to pain, including being accidentally stepped on, is to growl rather than whine. Give him space and pay attention to his body language.',
-    important: true,
-  },
-  {
-    icon: '🚗',
-    title: 'Car rides',
-    text: 'Always put him in the back seat and secure him with his seat belt.',
-  },
-]
+  const [year, month, day] = fact.value.split('-').map(Number)
+  return [fact.title, getAge(new Date(year, month - 1, day))]
+})
 
-const communicationCommands = [
-  {
-    name: 'Sit',
-    use: 'Use when Winston needs to pause and focus before the next instruction.',
-  },
-  {
-    name: 'Stay',
-    use: 'Use when Winston needs to remain in place until he is released.',
-  },
-  {
-    name: 'Down',
-    use: 'Use when you want Winston to lie down and settle.',
-  },
-  {
-    name: 'Leave it',
-    use: 'Use before he picks up or approaches something he should not have. This is preferable to taking an item away.',
-  },
-  {
-    name: 'Drop it',
-    use: 'Use after he has something in his mouth. Give the cue instead of reaching for the item; only take it directly in an emergency.',
-  },
-]
-
-const trickCommands = [
-  {
-    name: 'Shake',
-    use: 'A just-for-fun paw shake.',
-  },
-  {
-    name: 'Spin',
-    use: 'A just-for-fun turn in a circle.',
-  },
-]
-
-const galleryPhotos = [
-  {
-    src: 'gallery/puppy-soccer.jpg',
-    alt: 'Winston as a puppy sitting in the grass with a soccer ball',
-  },
-  {
-    src: 'gallery/beach-sunset.jpg',
-    alt: 'Winston sitting on a tree stump at the beach at sunset',
-  },
-  {
-    src: 'gallery/toy-drumstick.jpg',
-    alt: 'Winston holding a toy drumstick',
-  },
-  {
-    src: 'gallery/dog-friend.jpg',
-    alt: 'Winston sitting in the grass beside another dog',
-  },
-  {
-    src: 'gallery/birthday.jpg',
-    alt: 'Winston wearing a birthday hat behind his birthday dinner',
-  },
-  {
-    src: 'gallery/halloween.jpg',
-    alt: 'Winston dressed as a witch for Halloween',
-  },
-  {
-    src: 'gallery/outdoor-closeup.jpg',
-    alt: 'A close-up of Winston smiling outside',
-  },
-  {
-    src: 'gallery/christmas.jpg',
-    alt: 'Winston wearing a Christmas tree hat',
-  },
-  {
-    src: 'gallery/puppy-beanie.jpg',
-    alt: 'Winston as a puppy wearing a tiny beanie',
-  },
-  {
-    src: 'gallery/portrait.jpg',
-    alt: 'A portrait of Winston smiling',
-  },
-]
+const careCards = content.care.cards
+const communicationCommands = content.commands.useful
+const trickCommands = content.commands.tricks
+const galleryPhotos = content.photos.items
 
 type Command = (typeof communicationCommands)[number]
 type GalleryPhoto = (typeof galleryPhotos)[number]
@@ -247,8 +98,8 @@ function App() {
   return (
     <>
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="Winston home">
-          <span aria-hidden="true">🐾</span> Winston
+        <a className="brand" href="#top" aria-label={`${content.site.brand} home`}>
+          <span aria-hidden="true">🐾</span> {content.site.brand}
         </a>
         <nav aria-label="Main navigation">
           <a href="#about">About</a>
@@ -262,28 +113,29 @@ function App() {
           <div className="hero-copy">
             <p className="eyebrow">Professional good boy</p>
             <h1 id="hero-title">
-              Hi, I’m <span className="hero-name">Winston.</span>
+              {content.hero.greeting}{' '}
+              <span className="hero-name">{content.hero.name}</span>
             </h1>
-            <p className="hero-intro">
-              My owner is a crazy dog mom who made this website for me. Looking
-              for a kind sitter who will keep my tail wagging.
-            </p>
+            <p className="hero-intro">{content.hero.intro}</p>
             <div className="hero-actions">
               <a className="button primary" href="#care">
-                Read my care guide
+                {content.hero.care_button}
               </a>
               <a className="button secondary" href="#contact">
-                Contact my humans
+                {content.hero.contact_button}
               </a>
             </div>
           </div>
-          <div className="portrait" aria-label="Winston, a happy dog" role="img">
+          <div
+            className="portrait"
+            aria-label={content.hero.image_description}
+            role="img"
+          >
             <img
               className="portrait-photo"
-              src={`${import.meta.env.BASE_URL}winston.png`}
+              src={`${import.meta.env.BASE_URL}${content.hero.image}`}
               alt=""
             />
-            <span className="portrait-tag" aria-hidden="true">W</span>
           </div>
         </section>
 
@@ -299,23 +151,14 @@ function App() {
         <section className="section about" id="about">
           <div>
             <p className="eyebrow">A little about me</p>
-            <h2>Easygoing, curious, and always up for company.</h2>
+            <h2>{content.about.heading}</h2>
           </div>
           <div className="about-copy">
-            <p>
-              Winston is a friendly, medium-energy mix of Miniature Poodle,
-              Pomeranian, Papillon, and Bichon Frise. He loves fetch and happily
-              accepts pets from anyone, including strangers. His excitement can
-              come out as barking or overly enthusiastic behavior, so calm,
-              attentive handling helps him feel secure.
-            </p>
+            <p>{content.about.description}</p>
             <ul className="traits" aria-label="Behavior and training">
-              <li>✓ Loves fetch</li>
-              <li>✓ House trained</li>
-              <li>✓ Knows drop it & leave it</li>
-              <li>✓ Crate trained</li>
-              <li>✓ Neutered</li>
-              <li>✓ Microchipped</li>
+              {content.about.traits.map((trait) => (
+                <li key={trait}>✓ {trait}</li>
+              ))}
             </ul>
           </div>
         </section>
@@ -324,14 +167,21 @@ function App() {
           <div className="section-heading">
             <div>
               <p className="eyebrow">The important stuff</p>
-              <h2>Winston’s care guide</h2>
+              <h2>{content.care.heading}</h2>
             </div>
-            <p>Everything you need for a happy, low-stress stay.</p>
+            <p>{content.care.description}</p>
           </div>
           <div className="care-grid">
             {careCards.map((card) => (
-              <article className={card.important ? 'care-card important' : 'care-card'} key={card.title}>
-                <span className="card-icon" aria-hidden="true">{card.icon}</span>
+              <article className="care-card" key={card.title}>
+                <span className="card-visual" aria-hidden="true">
+                  {card.image ? (
+                    <img
+                      src={`${import.meta.env.BASE_URL}${card.image}`}
+                      alt=""
+                    />
+                  ) : card.emoji}
+                </span>
                 <h3>{card.title}</h3>
                 <p>{card.text}</p>
               </article>
@@ -349,13 +199,9 @@ function App() {
           }}
         >
           <div>
-            <p className="eyebrow">Words Winston knows</p>
-            <h2>Communicating with Winston</h2>
-            <p>
-              Here are Winston’s most useful commands, including the exact
-              phrase and hand signal to use. Hover or click a command to see
-              more details.
-            </p>
+            <p className="eyebrow">Commands Winston knows</p>
+            <h2>{content.commands.heading}</h2>
+            <p>{content.commands.description}</p>
           </div>
           <div className="command-panel">
             <div className="command-group">
@@ -415,8 +261,12 @@ function App() {
               </div>
             </div>
             <div className="command-detail" role="status">
-              <span>How to use “{visibleCommand.name}”</span>
-              <strong>{visibleCommand.use}</strong>
+              <span>{content.commands.detail_prefix} “{visibleCommand.name}”</span>
+              <strong>{visibleCommand.details}</strong>
+            </div>
+            <div className="other-words">
+              <h3>Other words Winston knows</h3>
+              <p>{content.commands.other_words}</p>
             </div>
           </div>
         </section>
@@ -425,24 +275,24 @@ function App() {
           <div className="photo-heading">
             <div>
               <p className="eyebrow">A little more Winston</p>
-              <h2 id="photos-title">Favorite photos</h2>
+              <h2 id="photos-title">{content.photos.heading}</h2>
             </div>
-            <span>Swipe to see more →</span>
+            <span>{content.photos.swipe_text}</span>
           </div>
           <div className="photo-strip">
             {galleryPhotos.map((photo) => (
               <button
                 className="photo-tile"
                 type="button"
-                key={photo.src}
-                aria-label={`Open ${photo.alt}`}
+                key={photo.file}
+                aria-label={`Open ${photo.description}`}
                 onClick={(event) => {
                   lastPhotoTriggerRef.current = event.currentTarget
                   setOpenPhoto(photo)
                 }}
               >
                 <img
-                  src={`${import.meta.env.BASE_URL}${photo.src}`}
+                  src={`${import.meta.env.BASE_URL}${photo.file}`}
                   alt=""
                   loading="lazy"
                 />
@@ -454,32 +304,32 @@ function App() {
         <section className="contact" id="contact">
           <div>
             <p className="eyebrow">Questions or updates?</p>
-            <h2>Important contact information</h2>
-            <p>
-              For an emergency, contact Winston’s owner using the details
-              provided for his stay, then contact his vet if needed.
-            </p>
+            <h2>{content.contact.heading}</h2>
+            <p>{content.contact.description}</p>
           </div>
           <div className="contact-links">
-            <a className="contact-detail" href="tel:+18084271000">
-              <span>Veterinarian</span>
-              <strong>Oahu Veterinary Clinic</strong>
-              <small>1347 Kapiolani Blvd, Suite 101, Honolulu, HI 96814</small>
-              <small>(808) 427-1000</small>
+            <a
+              className="contact-detail"
+              href={`tel:${content.contact.veterinarian.phone_link}`}
+            >
+              <span>{content.contact.veterinarian.label}</span>
+              <strong>{content.contact.veterinarian.name}</strong>
+              <small>{content.contact.veterinarian.address}</small>
+              <small>{content.contact.veterinarian.phone_display}</small>
             </a>
           </div>
         </section>
       </main>
 
       <footer>
-        <span>Made with lots of treats for Winston.</span>
+        <span>{content.footer.message}</span>
         <a href="#top">Back to top ↑</a>
       </footer>
 
       <dialog
         className="lightbox"
         ref={lightboxRef}
-        aria-label={openPhoto?.alt ?? 'Photo viewer'}
+        aria-label={openPhoto?.description ?? content.photos.heading}
         onClick={(event) => {
           if (event.target === event.currentTarget) closePhoto()
         }}
@@ -500,8 +350,8 @@ function App() {
               ×
             </button>
             <img
-              src={`${import.meta.env.BASE_URL}${openPhoto.src}`}
-              alt={openPhoto.alt}
+              src={`${import.meta.env.BASE_URL}${openPhoto.file}`}
+              alt={openPhoto.description}
             />
           </div>
         )}

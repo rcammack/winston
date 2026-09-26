@@ -174,24 +174,6 @@ h1 {
   width: 96%;
 }
 
-.portrait-tag {
-  align-items: center;
-  background: var(--orange);
-  border: 2px solid var(--ink);
-  border-radius: 50%;
-  bottom: 8%;
-  color: white;
-  display: flex;
-  font-family: var(--display);
-  font-size: 1.5rem;
-  font-weight: 800;
-  height: 54px;
-  justify-content: center;
-  position: absolute;
-  right: 22%;
-  width: 54px;
-}
-
 .quick-facts {
   background: var(--ink);
   color: white;
@@ -312,14 +294,20 @@ h2 {
   padding: 28px;
 }
 
-.care-card.important {
-  background: var(--orange);
-}
-
-.card-icon {
+.card-visual {
   display: block;
   font-size: 2rem;
+  height: 48px;
   margin-bottom: 16px;
+  width: 48px;
+}
+
+.card-visual img {
+  border-radius: 10px;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .care-card h3 {
@@ -332,11 +320,6 @@ h2 {
   font-size: 0.9rem;
   line-height: 1.7;
   margin-bottom: 0;
-}
-
-.care-card.important h3,
-.care-card.important p {
-  color: white;
 }
 
 .skills {
@@ -422,6 +405,17 @@ h2 {
 
 .command-detail strong {
   line-height: 1.5;
+}
+
+.other-words h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.other-words p {
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 0;
 }
 
 .photo-section {
