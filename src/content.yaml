@@ -159,31 +159,71 @@ care:
 commands:
   heading: "Communicating with Winston"
   description: >-
-    Here are Winston’s most useful commands, including the exact wording and hand signal I use. He is more of a visual learner so the hand signal is important. However, when he is trying to communicate something, he usually just stares. Occasionally he will boop you or paw at you if his toy is out of reach though. Hover or click a command to see more details.
+    Here are Winston’s most useful commands, including the exact wording and hand signal I use. I often say his name to get his attention first before telling him a command.  He is more of a visual learner so the hand signal is important. When Winston needs something, he communicates via a combination of staring, barking, booping, and pawing. Hover/click a command to see more details.
   detail_prefix: "How to use"
   useful:
-    - name: "Sit"
-      details: >-
-        Use when Winston needs to pause and focus before the next instruction.
-    - name: "Stay"
-      details: >-
-        Use when Winston needs to remain in place until he is released.
-    - name: "Lay down"
-      details: "Use when you want Winston to lie down and settle."
+    - name: "Come (here)"
+      details: "If he doesn't listen, try running away and he will probably chase you."
+    - name: "Park it"
+      details: "Point down between your feet to have Winston sit there. Useful in elevators or as another recall option."
+    - name: "Look at me"
+      details: "Use this to have Winston focus on you."
     - name: "Leave it"
-      details: >-
-        Use before he picks up or approaches something he should not have. This
-        is preferable to taking an item away.
+      details: "Use this on walks or if you drop something before Winston picks up or approaches something he should not have."
     - name: "Drop it"
-      details: >-
-        Use after he has something in his mouth. Give the cue instead of
-        reaching for the item; only take it directly in an emergency.
+      details: "Make a fist when asking Winston to drop something. It might take him a few seconds while he debates actually obeying. Always reward this command with a treat."
+    - name: "Sit"
+      details: "Pinch your fingers (like an italian) downward when asking Winston to sit."
+    - name: "Lay down"
+      details: "Hold a flat hand tilted downward when asking Winston to lie down."
+    - name: "Stand"
+      details: "Move a flat hand upward, palm first, when asking Winston to stand. Always use this command before attempting to pick him up or move him."
+    - name: "Stay"
+      details: "Hold your palm toward Winston when asking him to stay. Say once, walk away, and then release him with 'ok' once you're back. See 'wait' if you aren't going to come back within about a minute."
+    - name: "Wait"
+      details: "Hold your palm toward Winston when asking him to wait. Similar to stay, 'wait' is used when you aren't going to come back to him to release him (such as when playing hide-and-seek since you release him while you're hiding). You can also use this command to have him wait for his food or a treat. Release word is 'ok'."
+    - name: "Touch"
+      details: "Hold your hand sideways with your palm facing Winston to have him boop your hand with his nose. It's a good command if you need him to move over."
+    - name: "Off"
+      details: "Point to the floor when asking Winston to get off something. Also, this command is useful when you want him to stop jumping on you."
+    - name: "Heel"
+      details: "Point down at your side when asking Winston to heel on walks."
+    - name: "Boop"
+      details: "There is no hand signal for this one; I'm trying to train Winston to use this as the signal that he needs to pee."
+    - name: "Crate"
+      details: "Point to Winston’s crate when it is time for his nap. You can use his crate if he needs a timeout from barking excesively or nipping your feet, but tell him to go in calmly."
+    - name: "Bed"
+      details: "Point to Winston’s bed when asking him to go there."
+    - name: "Place"
+      details: "Point to the desired place when using this command."
+    - name: "Go get a toy"
+      details: "Point toward a toy when asking Winston to go get one."
+    - name: "Back up"
+      details: "Make a shooing motion when asking Winston to back up."
+    - name: "Head down"
+      details: "Starting from the lay down signal, sweep your hand to the side when asking Winston to put his head down from his lay down position. He only holds this for around 3-5 seconds right now."
+    - name: "Up"
+      details: "Pat the surface, your legs, or wherever you want Winston to come up."
+    - name: "Switch sides"
+      details: "With your hand at your side, swoop your pointer finger backwards when asking Winston to switch sides while heeling on walks."
   tricks:
-    - name: "Paw"
-      details: "A just-for-fun hand shake."
+    - name: "Whisper"
+      details: "Make a baby shark motion when asking Winston to whisper-bark."
+    - name: "Paw/other paw"
+      details: "Offer Winston a handshake when asking for his paw. Can follow up with other paw to get a handshake with his other paw."
     - name: "Spin"
-      details: "A just-for-fun turn in a circle. Only counter-clockwise for some reason."
-  other_words: "Okay, walk, food."
+      details: "Twirl your pointer finger downward when asking Winston to spin. He only turns counter-clockwise."
+    - name: "Chin"
+      details: "Cup your hand when asking Winston to rest his chin there."
+    - name: "Bang"
+      details: "Make a finger gun and fire to see Winston play dead."
+    - name: "Bark"
+      details: "Make a mommy shark motion when asking Winston to bark. He usually sneezes first."
+    - name: "Roll over"
+      details: "Roll your fist when asking Winston to roll over. He's pretty particular about this one though- will only do it on carpet and similar to 'spin', only rolls over one way."
+    - name: "Tunnel"
+      details: "Sit on the floor and have Winston go under your legs like a tunnel."
+  other_words: "Okay, walk, food, couch."
 
 # PHOTOS SECTION — displayed with the header "A little more Winston"
 photos:
