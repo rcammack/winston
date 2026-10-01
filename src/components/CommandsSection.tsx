@@ -46,7 +46,6 @@ function CommandsSection() {
             onCommandFocus={setHoveredCommand}
             onCommandSelect={selectCommand}
             selectedCommand={selectedCommand}
-            scrollLabel="useful commands"
           />
         </div>
         <div className="command-group">
@@ -58,10 +57,13 @@ function CommandsSection() {
             onCommandFocus={setHoveredCommand}
             onCommandSelect={selectCommand}
             selectedCommand={selectedCommand}
-            scrollLabel="tricks"
           />
         </div>
-        <div className="command-detail" role="status">
+        <div
+          className="command-detail"
+          key={visibleCommand.name}
+          role="status"
+        >
           <span>{content.commands.detail_prefix} “{visibleCommand.name}”</span>
           <strong>{visibleCommand.details}</strong>
         </div>

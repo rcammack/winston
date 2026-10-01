@@ -14,7 +14,10 @@ function AboutSection() {
         <p>{content.about.description}</p>
         <ul className="traits" aria-label="Behavior and training">
           {content.about.traits.map((trait) => (
-            <li key={trait}>✓ {trait}</li>
+            <li key={trait}>
+              <span aria-hidden="true">✓</span>
+              <span>{trait}</span>
+            </li>
           ))}
         </ul>
       </div>

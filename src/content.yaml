@@ -37,129 +37,135 @@ about:
     anyone, including strangers. His excitement can come out as barking so calm, attentive handling helps him feel
     secure.
   traits:
-    - "AKC Canine Good Citizen certified"
     - "House trained"
     - "Crate trained"
     - "Neutered"
     - "Microchipped"
+    - "AKC Canine Good Citizen certified"
 
 # CARE GUIDE SECTION — displayed with the header "The important stuff"
 care:
   heading: "Winston’s care guide"
   description: "Everything you need for a happy, low-stress stay."
-  cards:
-    - image: null
-      emoji: "🥣"
-      title: "Meals"
-      text: >-
-        Feed 1/4 cup of kibble (Purino Pro Plan sensitive skin salmon recipe) with a sprinkle of dental powder twice a day—once in the morning and once in the
-        evening. He usually doesn't eat right away and sometimes skips a meal entirely. 
+  groups:
+    - heading: "Daily care"
+      cards:
+        - image: null
+          emoji: "🥣"
+          title: "Meals"
+          text: >-
+            Feed 1/4 cup of kibble (Purino Pro Plan sensitive skin salmon recipe) with a sprinkle of dental powder twice a day—once in the morning and once in the
+            evening. He usually doesn't eat right away and sometimes skips a meal entirely. 
 
-    - image: null
-      emoji: "🚫"
-      title: "Elimination diet"
-      text: >-
-        No chicken, beef, lamb, dairy, or wheat, including in treats. He is on
-        an elimination diet because he has been itchy and licking his paws. 
+        - image: null
+          emoji: "🦮"
+          title: "Bathroom breaks"
+          text: >-
+            Take him out every 4–5 hours. He does not whine or otherwise signal
+            when he needs to pee, so do not wait for him to ask. All he does is stare at you creepily and silently. Don't use pee pads please. Also note that although he is house trained, if another dog has peed indoors before, he may try to mark that spot (wraps provided just in case).
 
-    - image: null
-      emoji: "🦮"
-      title: "Bathroom breaks"
-      text: >-
-        Take him out every 4–5 hours. He does not whine or otherwise signal
-        when he needs to pee, so do not wait for him to ask. All he does is stare at you creepily and silently. Don't use pee pads please. Also note that although he is house trained, if another dog has peed indoors before, he may try to mark that spot (wraps provided just in case).
+        - image: null
+          emoji: "💤"
+          title: "Crate routine"
+          text: >-
+            He sleeps in his crate overnight in our bedroom. He also takes a 2–3 hour crate nap
+            around 5–7 PM, or after his evening walk. He may need to readjust to this in a new environment though.
 
-    - image: null
-      emoji: "💤"
-      title: "Crate routine"
-      text: >-
-        He sleeps in his crate overnight in our bedroom. He also takes a 2–3 hour crate nap
-        around 5–7 PM, or after his evening walk. He may need to readjust to this in a new environment though.
+        - image: null
+          emoji: "🚶"
+          title: "Walks"
+          text: >-
+            Take him on at least 2 15-minute walks a day- one around 11am and another in the evening. He poops 2-3 times throughout the day. Oftentimes he poops twice on one walk, so make sure you grab more than 1 poop bag. 
 
-    - image: null
-      emoji: "🚪"
-      title: "Separation anxiety"
-      text: >-
-        He has separation anxiety and will bark/howl if left alone randomly. His daily evening crate nap is his trained
-        window for being home alone while you run errands, eat out, work out, etc.
+        - image: null
+          emoji: "🎾"
+          title: "Play time"
+          text: >-
+            He loves fetch, but please don't let him run on any slippery floors. He can also play hide-and-seek (with you or a toy) if you use his stay command. Another activity he enjoys is ripping up things like napkins, tissues, or paper from packages. Please play with him for at least 30 minutes throughout the day so he is mentally stimulated. 
 
-    - image: null
-      emoji: "🐕"
-      title: "Other dogs"
-      text: >-
-        He is friendly with most dogs and may bark from excitement, but it is probably best to not
-        let him play with them. Avoid on-leash greetings because the hands-free
-        leash tangles easily.
+        - image: null
+          emoji: "🪮"
+          title: "Grooming"
+          text: >-
+            Please brush him every couple of days. Focus on brushing behind his ears and in the armpits because that is where he could get matted. 
 
-    - image: null
-      emoji: "🦺"
-      title: "Harness only"
-      text: >-
-        Never use a collar. His breed mix is prone to collapsed trachea, so
-        always attach his leash to his harness. He also might run away when you try to put his harness on, but if you pretend you're leaving him, he will reluctantly comply. 
+    - heading: "Health and safety"
+      cards:
+        - image: null
+          emoji: "🚫"
+          title: "Elimination diet"
+          text: >-
+            No chicken, beef, lamb, dairy, or wheat, including in treats. He is on
+            an elimination diet because he has been itchy and licking his paws. 
 
-    - image: null
-      emoji: "👟"
-      title: "Overexcitement on walks"
-      text: >-
-        When he gets too excited or exhausted during a walk, he may attack
-        shoes, slippers, or feet—especially while crossing the street. Watch
-        for overstimulation and keep crossings controlled with the heel command before crossing the street.
+        - image: null
+          emoji: "🦺"
+          title: "Harness only"
+          text: >-
+            Never use a collar. His breed mix is prone to collapsed trachea, so
+            always attach his leash to his harness. He also might run away when you try to put his harness on, but if you pretend you're leaving him, he will reluctantly comply. 
 
-    - image: null
-      emoji: "👧"
-      title: "Children & cats"
-      text: >-
-        He loves children and regularly sees my 3-year-old brother, but can get too
-        excited around them. His behavior with cats is unknown because he has
-        never been introduced to one.
+        - image: null
+          emoji: "👟"
+          title: "Overexcitement on walks"
+          text: >-
+            When he gets too excited or exhausted during a walk, he may attack
+            shoes, slippers, or feet—especially while crossing the street. Watch
+            for overstimulation and keep crossings controlled with the heel command before crossing the street.
 
-    - image: null
-      emoji: "🧻"
-      title: "Resource guarding"
-      text: >-
-        He may guard stolen items such as used tissues. Read his body language
-        and do not take things away unless it is an emergency. Prevent access in the first place ideally
-        and use “drop it” or “leave it.”
+        - image: null
+          emoji: "⚠️"
+          title: "EMERGENCY"
+          text: >-
+            His default response to pain, including being accidentally stepped on,
+            is to growl rather than whine. Give him space and pay attention to his
+            body language. If he gets seriously hurt and you have to move or pick him up, you may need to cover him with a blanket, towel, jacket, etc before handling him.
 
-    - image: null
-      emoji: "⚠️"
-      title: "EMERGENCY"
-      text: >-
-        His default response to pain, including being accidentally stepped on,
-        is to growl rather than whine. Give him space and pay attention to his
-        body language. If he gets seriously hurt and you have to move or pick him up, you may need to cover him with a blanket, towel, jacket, etc before handling him.
+        - image: null
+          emoji: "🚗"
+          title: "Car rides"
+          text: >-
+            Always put him in the back seat and secure him with his seat belt. He has stepped on the seatbelt and unbuckled himself once in the past so please don't roll down the back window too much just in case.
 
-    - image: null
-      emoji: "🚗"
-      title: "Car rides"
-      text: >-
-        Always put him in the back seat and secure him with his seat belt. He has stepped on the seatbelt and unbuckled himself once in the past so please don't roll down the back window too much just in case.
+    - heading: "Behavior and social situations"
+      cards:
+        - image: null
+          emoji: "🚪"
+          title: "Separation anxiety"
+          text: >-
+            He has separation anxiety and will bark/howl if left alone randomly. His daily evening crate nap is his trained
+            window for being home alone while you run errands, eat out, work out, etc.
 
-    - image: null
-      emoji: "🪮"
-      title: "Grooming"
-      text: >-
-        Please brush him every couple of days. Focus on brushing behind his ears and in the armpits because that is where he could get matted. 
+        - image: null
+          emoji: "🐕"
+          title: "Other dogs"
+          text: >-
+            He is friendly with most dogs and may bark from excitement, but it is probably best to not
+            let him play with them. Avoid on-leash greetings because the hands-free
+            leash tangles easily.
 
-    - image: null
-      emoji: "🚶"
-      title: "Walks"
-      text: >-
-        Take him on at least 2 15-minute walks a day- one around 11am and another in the evening. He poops 2-3 times throughout the day. Oftentimes he poops twice on one walk, so make sure you grab more than 1 poop bag. 
+        - image: null
+          emoji: "👧"
+          title: "Children & cats"
+          text: >-
+            He loves children and regularly sees my 3-year-old brother, but can get too
+            excited around them. His behavior with cats is unknown because he has
+            never been introduced to one.
 
-    - image: null
-      emoji: "🎾"
-      title: "Play time"
-      text: >-
-        He loves fetch, but please don't let him run on any slippery floors. He can also play hide-and-seek (with you or a toy) if you use his stay command. Another activity he enjoys is ripping up things like napkins, tissues, or paper from packages. Please play with him for at least 30 minutes throughout the day so he is mentally stimulated. 
+        - image: null
+          emoji: "🧻"
+          title: "Resource guarding"
+          text: >-
+            He may guard stolen items such as used tissues. Read his body language
+            and do not take things away unless it is an emergency. Prevent access in the first place ideally
+            and use “drop it” or “leave it.”
 
 
 # COMMANDS SECTION — displayed with the header "Commands Winston knows"
 commands:
   heading: "Communicating with Winston"
   description: >-
-    Here are Winston’s most useful commands, including the exact wording and hand signal I use. I often say his name to get his attention first before telling him a command.  He is more of a visual learner so the hand signal is important. When Winston needs something, he communicates via a combination of staring, barking, booping, and pawing. Hover/click a command to see more details.
+    Here are Winston’s most useful commands, including the exact wording and hand signal I use. I often say his name to get his attention first before telling him a command.  He is more of a visual learner so the hand signal is important. When Winston needs something, he communicates via a combination of staring, barking, booping, and pawing. Hover/click a command to see more details below.
   detail_prefix: "How to use"
   useful:
     - name: "Come (here)"
@@ -275,6 +281,7 @@ footer:
 #   in unquoted text. Quoted text and ">-" paragraphs avoid those problems.
 # - Leave true and false unquoted when used; they are settings, not text.
 # - Each "-" begins another item in a list.
+# - Keep each care card inside the "cards" list for its care group.
 # - For a care card image, replace null with a quoted path such as
 #   "cards/meals.jpg". If image is null, the card displays its emoji instead.
 # - Put care card image files in public/cards/.

@@ -1,5 +1,5 @@
 import content from '../content.yaml'
-import CareCard from './CareCard'
+import CareGroup from './CareGroup'
 import SectionTitle from './SectionTitle'
 
 function CareGuide() {
@@ -14,9 +14,9 @@ function CareGuide() {
         </div>
         <p>{content.care.description}</p>
       </div>
-      <div className="care-grid">
-        {content.care.cards.map((card) => (
-          <CareCard card={card} key={card.title} />
+      <div className="care-groups">
+        {content.care.groups.map((group) => (
+          <CareGroup group={group} key={group.heading} />
         ))}
       </div>
     </section>

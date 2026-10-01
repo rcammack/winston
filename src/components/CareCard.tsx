@@ -1,7 +1,7 @@
 import type { SiteContent } from '../content-schema'
 
 type CareCardProps = {
-  card: SiteContent['care']['cards'][number]
+  card: SiteContent['care']['groups'][number]['cards'][number]
 }
 
 function CareCard({ card }: CareCardProps) {

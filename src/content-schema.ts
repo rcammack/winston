@@ -5,6 +5,13 @@ const commandSchema = z.object({
   details: z.string().min(1),
 })
 
+const careCardSchema = z.object({
+  image: z.string().min(1).nullable(),
+  emoji: z.string().min(1),
+  title: z.string().min(1),
+  text: z.string().min(1),
+})
+
 const contentSchema = z.object({
   site: z.object({
     brand: z.string().min(1),
@@ -31,11 +38,9 @@ const contentSchema = z.object({
   care: z.object({
     heading: z.string().min(1),
     description: z.string().min(1),
-    cards: z.array(z.object({
-      image: z.string().min(1).nullable(),
-      emoji: z.string().min(1),
-      title: z.string().min(1),
-      text: z.string().min(1),
+    groups: z.array(z.object({
+      heading: z.string().min(1),
+      cards: z.array(careCardSchema).min(1),
     })).min(1),
   }),
   commands: z.object({
