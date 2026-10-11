@@ -32,9 +32,9 @@ hero:
 about:
   heading: "Smart, curious, and loves getting pets from strangers."
   description: >-
-    Winston is a friendly, medium-energy mix of Miniature Poodle, Pomeranian,
+    Winston is a smart, medium-energy mix of Miniature Poodle, Pomeranian,
     Papillon, and Bichon Frise. He loves fetch and happily accepts pets from
-    anyone, including strangers. His excitement can come out as barking so calm, attentive handling helps him feel
+    anyone, including strangers. His excitement can come out as barking, so calm, attentive handling helps him feel
     secure.
   traits:
     - "House trained"
@@ -54,56 +54,50 @@ care:
           emoji: "🥣"
           title: "Meals"
           text: >-
-            Feed 1/4 cup of kibble (Purino Pro Plan sensitive skin salmon recipe) with a sprinkle of dental powder twice a day—once in the morning and once in the
-            evening. He usually doesn't eat right away and sometimes skips a meal entirely. 
+            Feed 1/4 cup of kibble (Purina Pro Plan sensitive skin salmon recipe) with a sprinkle of dental powder twice a day—once in the morning and once in the
+            evening. He usually doesn't eat right away and sometimes skips a meal entirely. Please use the food and treats provided and avoid giving him table scraps. 
 
         - image: null
           emoji: "🦮"
           title: "Bathroom breaks"
           text: >-
-            Take him out every 4–5 hours. He does not whine or otherwise signal
-            when he needs to pee, so do not wait for him to ask. All he does is stare at you creepily and silently. Don't use pee pads please. Also note that although he is house trained, if another dog has peed indoors before, he may try to mark that spot (wraps provided just in case).
+            Take him out every 4–5 hours starting right when you get him out of the crate in the morning. He does not whine or otherwise signal
+            when he needs to pee, so do not wait for him to ask. All he does is stare at you creepily and silently. Don't use pee pads, please. Also note that although he is house trained, if another dog has peed indoors before, he may try to mark that spot (wraps provided just in case).
 
         - image: null
           emoji: "💤"
           title: "Crate routine"
           text: >-
             He sleeps in his crate overnight in our bedroom. He also takes a 2–3 hour crate nap
-            around 5–7 PM, or after his evening walk. He may need to readjust to this in a new environment though.
+            around 5–7 PM, or after his evening walk. He may need to readjust to this in a new environment though. You can use his crate for a timeout if he is barking too much at something outside so he can calm down.
 
         - image: null
           emoji: "🚶"
           title: "Walks"
           text: >-
-            Take him on at least 2 15-minute walks a day- one around 11am and another in the evening. He poops 2-3 times throughout the day. Oftentimes he poops twice on one walk, so make sure you grab more than 1 poop bag. 
+            We take him on 2-3 short walks a day- one around 11am and another around 4pm. He poops 2-3 times throughout the day. Oftentimes he poops twice on one walk, so make sure you grab more than 1 poop bag. He might run away when you try to put his harness on, but if you pretend you're leaving him, he will reluctantly comply. When coming back inside, he's used to getting his paws wiped, but it's up to you if you want to do that or not.
 
         - image: null
           emoji: "🎾"
           title: "Play time"
           text: >-
-            He loves fetch, but please don't let him run on any slippery floors. He can also play hide-and-seek (with you or a toy) if you use his stay command. Another activity he enjoys is ripping up things like napkins, tissues, or paper from packages. Please play with him for at least 30 minutes throughout the day so he is mentally stimulated. 
+            He loves fetch, but please avoid letting him run on slippery floors. He can also play hide-and-seek (with you, a toy, or a treat) if you use his stay command. Another activity he enjoys is ripping up things like napkins or paper from packages.
 
         - image: null
           emoji: "🪮"
           title: "Grooming"
           text: >-
-            Please brush him every couple of days. Focus on brushing behind his ears and in the armpits because that is where he could get matted. 
+            Please brush him every couple of days. Focus on brushing gently behind his ears and in the armpits because that is where he gets matted. If he has a lot of eye boogers, you can use his comb to get them out. He likes to eat them/lick the comb after 🤢.
 
     - heading: "Health and safety"
       cards:
         - image: null
-          emoji: "🚫"
-          title: "Elimination diet"
+          emoji: "⚠️"
+          title: "EMERGENCY"
           text: >-
-            No chicken, beef, lamb, dairy, or wheat, including in treats. He is on
-            an elimination diet because he has been itchy and licking his paws. 
-
-        - image: null
-          emoji: "🦺"
-          title: "Harness only"
-          text: >-
-            Never use a collar. His breed mix is prone to collapsed trachea, so
-            always attach his leash to his harness. He also might run away when you try to put his harness on, but if you pretend you're leaving him, he will reluctantly comply. 
+            His default response to pain, including being accidentally stepped on,
+            is to growl rather than whine. Give him space and pay attention to his
+            body language. If he gets seriously hurt and you have to move or pick him up, you may need to cover him with a blanket, towel, jacket, etc., before handling him.
 
         - image: null
           emoji: "👟"
@@ -114,18 +108,10 @@ care:
             for overstimulation and keep crossings controlled with the heel command before crossing the street.
 
         - image: null
-          emoji: "⚠️"
-          title: "EMERGENCY"
-          text: >-
-            His default response to pain, including being accidentally stepped on,
-            is to growl rather than whine. Give him space and pay attention to his
-            body language. If he gets seriously hurt and you have to move or pick him up, you may need to cover him with a blanket, towel, jacket, etc before handling him.
-
-        - image: null
           emoji: "🚗"
           title: "Car rides"
           text: >-
-            Always put him in the back seat and secure him with his seat belt. He has stepped on the seatbelt and unbuckled himself once in the past so please don't roll down the back window too much just in case.
+            Always put him in the back seat and secure him with his seat belt. He has stepped on the seat belt and unbuckled himself once in the past, so please don't roll down the back window too much just in case. He loves to bark at people from the car because it makes him feel invincible. 
 
     - heading: "Behavior and social situations"
       cards:
@@ -134,21 +120,14 @@ care:
           title: "Separation anxiety"
           text: >-
             He has separation anxiety and will bark/howl if left alone randomly. His daily evening crate nap is his trained
-            window for being home alone while you run errands, eat out, work out, etc.
+            window for being home alone while you run errands, eat out, work out, etc. If a different time works better for your schedule, we can preemptively start training him to nap during that period instead.
 
         - image: null
           emoji: "🐕"
-          title: "Other dogs"
+          title: "Other dogs, cats, & children"
           text: >-
-            He is friendly with most dogs and may bark from excitement, but it is probably best to not
-            let him play with them. Avoid on-leash greetings because the hands-free
-            leash tangles easily.
-
-        - image: null
-          emoji: "👧"
-          title: "Children & cats"
-          text: >-
-            He loves children and regularly sees my 3-year-old brother, but can get too
+            He is friendly with most dogs and may bark from excitement, but please don't let him play with them just in case since he is dog-selective. Avoid on-leash greetings because the hands-free
+            leash tangles easily. He loves children/babies and regularly sees my 3-year-old brother, but gets too
             excited around them. His behavior with cats is unknown because he has
             never been introduced to one.
 
@@ -156,8 +135,8 @@ care:
           emoji: "🧻"
           title: "Resource guarding"
           text: >-
-            He may guard stolen items such as used tissues. Read his body language
-            and do not take things away unless it is an emergency. Prevent access in the first place ideally
+            He doesn't care about his kibble and I have trained him to not guard his treats/chews, but he may guard stolen items such as used tissues or his own vomit, which he eats 👀. Read his body language
+            and do not take things away unless it is an emergency. Ideally, prevent access in the first place
             and use “drop it” or “leave it.”
 
 
@@ -165,71 +144,71 @@ care:
 commands:
   heading: "Communicating with Winston"
   description: >-
-    Here are Winston’s most useful commands, including the exact wording and hand signal I use. I often say his name to get his attention first before telling him a command.  He is more of a visual learner so the hand signal is important. When Winston needs something, he communicates via a combination of staring, barking, booping, and pawing. Hover/click a command to see more details below.
+    Here are Winston’s most useful commands, including the exact wording and hand signal I use. I often say his name to get his attention before telling him a command. He is more of a visual learner, so the hand signal is important. When Winston needs something, he communicates via a combination of staring, barking, booping, and pawing. Hover/click a command to see more details below.
   detail_prefix: "How to use"
   useful:
+    - name: "Sit"
+      details: "Pinch your fingers (like an Italian) downward when asking Winston to sit."
+    - name: "Lay down"
+      details: "Hold a flat hand tilted downward when asking Winston to lie down."
+    - name: "Stand"
+      details: "Move a flat hand upward, palm first, when asking Winston to stand. Always use this command before attempting to pick him up or move him."
+    - name: "Leave it"
+      details: "Use this on walks or if you drop something before Winston picks up or approaches something he should not have."
+    - name: "Drop it"
+      details: "Make a fist when asking Winston to drop something. It might take him a few seconds while he debates actually obeying. Always reward this command with a treat."
+    - name: "Go get a toy"
+      details: "Point toward a toy when asking Winston to go get one."
     - name: "Come (here)"
       details: "If he doesn't listen, try running away and he will probably chase you."
     - name: "Park it"
       details: "Point down between your feet to have Winston sit there. Useful in elevators or as another recall option."
     - name: "Look at me"
       details: "Use this to have Winston focus on you."
-    - name: "Leave it"
-      details: "Use this on walks or if you drop something before Winston picks up or approaches something he should not have."
-    - name: "Drop it"
-      details: "Make a fist when asking Winston to drop something. It might take him a few seconds while he debates actually obeying. Always reward this command with a treat."
-    - name: "Sit"
-      details: "Pinch your fingers (like an italian) downward when asking Winston to sit."
-    - name: "Lay down"
-      details: "Hold a flat hand tilted downward when asking Winston to lie down."
-    - name: "Stand"
-      details: "Move a flat hand upward, palm first, when asking Winston to stand. Always use this command before attempting to pick him up or move him."
     - name: "Stay"
-      details: "Hold your palm toward Winston when asking him to stay. Say once, walk away, and then release him with 'ok' once you're back. See 'wait' if you aren't going to come back within about a minute."
+      details: "Hold your palm toward Winston when asking him to stay. Say it once, walk away, and then release him with 'ok' once you're back. See 'wait' if you aren't going to come back to release him."
     - name: "Wait"
       details: "Hold your palm toward Winston when asking him to wait. Similar to stay, 'wait' is used when you aren't going to come back to him to release him (such as when playing hide-and-seek since you release him while you're hiding). You can also use this command to have him wait for his food or a treat. Release word is 'ok'."
     - name: "Touch"
       details: "Hold your hand sideways with your palm facing Winston to have him boop your hand with his nose. It's a good command if you need him to move over."
+    - name: "Boop"
+      details: "Similar to his 'touch' command, this one is for having him boop your leg. There is no hand signal for this one; I'm trying to train Winston to use this as the signal that he needs to pee."
     - name: "Off"
       details: "Point to the floor when asking Winston to get off something. Also, this command is useful when you want him to stop jumping on you."
-    - name: "Heel"
-      details: "Point down at your side when asking Winston to heel on walks."
-    - name: "Boop"
-      details: "There is no hand signal for this one; I'm trying to train Winston to use this as the signal that he needs to pee."
     - name: "Crate"
-      details: "Point to Winston’s crate when it is time for his nap. You can use his crate if he needs a timeout from barking excesively or nipping your feet, but tell him to go in calmly."
+      details: "Point to Winston’s crate when it is time for his nap. You can use his crate if he needs a timeout from barking excessively or nipping your feet, but tell him to go in calmly."
     - name: "Bed"
       details: "Point to Winston’s bed when asking him to go there."
     - name: "Place"
       details: "Point to the desired place when using this command."
-    - name: "Go get a toy"
-      details: "Point toward a toy when asking Winston to go get one."
     - name: "Back up"
       details: "Make a shooing motion when asking Winston to back up."
-    - name: "Head down"
-      details: "Starting from the lay down signal, sweep your hand to the side when asking Winston to put his head down from his lay down position. He only holds this for around 3-5 seconds right now."
     - name: "Up"
       details: "Pat the surface, your legs, or wherever you want Winston to come up."
+    - name: "Heel"
+      details: "Point down at your side when asking Winston to heel on walks."
     - name: "Switch sides"
       details: "With your hand at your side, swoop your pointer finger backwards when asking Winston to switch sides while heeling on walks."
   tricks:
     - name: "Whisper"
       details: "Make a baby shark motion when asking Winston to whisper-bark."
+    - name: "Bark"
+      details: "Make a mommy shark motion when asking Winston to bark. He usually sneezes first."
+    - name: "Head down"
+      details: "Starting from his lay down hand position, make a flat hand facing downwards and sweep your hand to the side when asking Winston to put his head down. He only holds this for around 3-5 seconds right now."
     - name: "Paw/other paw"
-      details: "Offer Winston a handshake when asking for his paw. Can follow up with other paw to get a handshake with his other paw."
+      details: "Offer Winston a handshake when asking for his paw. You can follow up with 'other paw' to get a handshake with his other paw."
     - name: "Spin"
-      details: "Twirl your pointer finger downward when asking Winston to spin. He only turns counter-clockwise."
+      details: "Twirl your pointer finger downward when asking Winston to spin. He only turns counter-clockwise 🤷‍♀️."
     - name: "Chin"
       details: "Cup your hand when asking Winston to rest his chin there."
     - name: "Bang"
-      details: "Make a finger gun and fire to see Winston play dead."
-    - name: "Bark"
-      details: "Make a mommy shark motion when asking Winston to bark. He usually sneezes first."
+      details: "Make a finger gun and fire to see Winston play dead. He seems to only do this on carpet/rugs."
     - name: "Roll over"
-      details: "Roll your fist when asking Winston to roll over. He's pretty particular about this one though- will only do it on carpet and similar to 'spin', only rolls over one way."
+      details: "Roll your fist when asking Winston to roll over. He's pretty particular about this one though- he will only do it on carpet/rugs and similar to 'spin', only rolls over one way."
     - name: "Tunnel"
-      details: "Sit on the floor and have Winston go under your legs like a tunnel."
-  other_words: "Okay, walk, food, couch."
+      details: "Sit on the floor with your feet in front and your knees up, then have Winston go under your legs like a tunnel."
+  other_words: "Okay, break (release command), go potty, walk, food, treat, couch."
 
 # PHOTOS SECTION — displayed with the header "A little more Winston"
 photos:
