@@ -50,40 +50,41 @@ care:
   groups:
     - heading: "Daily care"
       cards:
-        - image: null
+        - image: "cards/meals-winston.png"
+          image_scale: 1.5
           emoji: "🥣"
           title: "Meals"
           text: >-
             Feed 1/4 cup of kibble (Purina Pro Plan sensitive skin salmon recipe) with a sprinkle of dental powder twice a day—once in the morning and once in the
             evening. He usually doesn't eat right away and sometimes skips a meal entirely. Please use the food and treats provided and avoid giving him table scraps. 
 
-        - image: null
+        - image: "cards/bathroom-breaks-winston.png"
           emoji: "🦮"
           title: "Bathroom breaks"
           text: >-
             Take him out every 4–5 hours starting right when you get him out of the crate in the morning. He does not whine or otherwise signal
             when he needs to pee, so do not wait for him to ask. All he does is stare at you creepily and silently. Don't use pee pads, please. Also note that although he is house trained, if another dog has peed indoors before, he may try to mark that spot (wraps provided just in case).
 
-        - image: null
+        - image: "cards/crate-routine-winston.png"
           emoji: "💤"
           title: "Crate routine"
           text: >-
             He sleeps in his crate overnight in our bedroom. He also takes a 2–3 hour crate nap
             around 5–7 PM, or after his evening walk. He may need to readjust to this in a new environment though. You can use his crate for a timeout if he is barking too much at something outside so he can calm down.
 
-        - image: null
+        - image: "cards/walks-winston.png"
           emoji: "🚶"
           title: "Walks"
           text: >-
             We take him on 2-3 short walks a day- one around 11am and another around 4pm. He poops 2-3 times throughout the day. Oftentimes he poops twice on one walk, so make sure you grab more than 1 poop bag. He might run away when you try to put his harness on, but if you pretend you're leaving him, he will reluctantly comply. When coming back inside, he's used to getting his paws wiped, but it's up to you if you want to do that or not.
 
-        - image: null
+        - image: "cards/play-time-winston.png"
           emoji: "🎾"
           title: "Play time"
           text: >-
             He loves fetch, but please avoid letting him run on slippery floors. He can also play hide-and-seek (with you, a toy, or a treat) if you use his stay command. Another activity he enjoys is ripping up things like napkins or paper from packages.
 
-        - image: null
+        - image: "cards/grooming-winston.png"
           emoji: "🪮"
           title: "Grooming"
           text: >-
@@ -91,7 +92,7 @@ care:
 
     - heading: "Health and safety"
       cards:
-        - image: null
+        - image: "cards/emergency-winston.png"
           emoji: "⚠️"
           title: "EMERGENCY"
           text: >-
@@ -99,7 +100,7 @@ care:
             is to growl rather than whine. Give him space and pay attention to his
             body language. If he gets seriously hurt and you have to move or pick him up, you may need to cover him with a blanket, towel, jacket, etc., before handling him.
 
-        - image: null
+        - image: "cards/overexcitement-winston.png"
           emoji: "👟"
           title: "Overexcitement on walks"
           text: >-
@@ -107,7 +108,7 @@ care:
             shoes, slippers, or feet—especially while crossing the street. Watch
             for overstimulation and keep crossings controlled with the heel command before crossing the street.
 
-        - image: null
+        - image: "cards/car-rides-winston.png"
           emoji: "🚗"
           title: "Car rides"
           text: >-
@@ -115,14 +116,15 @@ care:
 
     - heading: "Behavior and social situations"
       cards:
-        - image: null
+        - image: "cards/separation-anxiety-winston.png"
+          image_scale: 1.5
           emoji: "🚪"
           title: "Separation anxiety"
           text: >-
             He has separation anxiety and will bark/howl if left alone randomly. His daily evening crate nap is his trained
             window for being home alone while you run errands, eat out, work out, etc. If a different time works better for your schedule, we can preemptively start training him to nap during that period instead.
 
-        - image: null
+        - image: "cards/other-dogs-winston.png"
           emoji: "🐕"
           title: "Other dogs, cats, & children"
           text: >-
@@ -131,7 +133,7 @@ care:
             excited around them. His behavior with cats is unknown because he has
             never been introduced to one.
 
-        - image: null
+        - image: "cards/resource-guarding-winston.png"
           emoji: "🧻"
           title: "Resource guarding"
           text: >-
@@ -215,12 +217,9 @@ photos:
   heading: "Favorite photos"
   swipe_text: "Swipe to see more →"
   items:
-    - file: "gallery/puppy-soccer.jpg"
-      description: "Winston as a puppy sitting in the grass with a soccer ball"
+
     - file: "gallery/beach-sunset.jpg"
       description: "Winston sitting on a tree stump at the beach at sunset"
-    - file: "gallery/toy-drumstick.jpg"
-      description: "Winston stealing a corndog"
     - file: "gallery/dog-friend.jpg"
       description: "Winston sitting in the grass beside another dog"
     - file: "gallery/birthday.jpg"
@@ -231,8 +230,6 @@ photos:
       description: "A close-up of Winston smiling outside"
     - file: "gallery/christmas.jpg"
       description: "Winston wearing a Christmas tree hat"
-    - file: "gallery/puppy-beanie.jpg"
-      description: "Winston as a puppy wearing a tiny hat"
     - file: "gallery/portrait.jpg"
       description: "A portrait of Winston smiling"
 

@@ -9,7 +9,15 @@ function CareCard({ card }: CareCardProps) {
     <article className="care-card">
       <span className="card-visual" aria-hidden="true">
         {card.image ? (
-          <img src={`${import.meta.env.BASE_URL}${card.image}`} alt="" />
+          <img
+            src={`${import.meta.env.BASE_URL}${card.image}`}
+            alt=""
+            style={
+              card.image_scale
+                ? { transform: `scale(${card.image_scale})` }
+                : undefined
+            }
+          />
         ) : card.emoji}
       </span>
       <h3>{card.title}</h3>

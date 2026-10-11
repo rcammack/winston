@@ -7,6 +7,7 @@ const commandSchema = z.object({
 
 const careCardSchema = z.object({
   image: z.string().min(1).nullable(),
+  image_scale: z.number().positive().optional(),
   emoji: z.string().min(1),
   title: z.string().min(1),
   text: z.string().min(1),
