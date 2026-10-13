@@ -51,7 +51,6 @@ care:
     - heading: "Daily care"
       cards:
         - image: "cards/meals-winston.png"
-          image_scale: 1.5
           emoji: "🥣"
           title: "Meals"
           text: >-
@@ -117,7 +116,6 @@ care:
     - heading: "Behavior and social situations"
       cards:
         - image: "cards/separation-anxiety-winston.png"
-          image_scale: 1.5
           emoji: "🚪"
           title: "Separation anxiety"
           text: >-
@@ -217,13 +215,10 @@ photos:
   heading: "Favorite photos"
   swipe_text: "Swipe to see more →"
   items:
-
     - file: "gallery/beach-sunset.jpg"
       description: "Winston sitting on a tree stump at the beach at sunset"
     - file: "gallery/dog-friend.jpg"
       description: "Winston sitting in the grass beside another dog"
-    - file: "gallery/birthday.jpg"
-      description: "Winston wearing a birthday hat behind his birthday dinner"
     - file: "gallery/halloween.jpg"
       description: "Winston dressed as a witch for Halloween"
     - file: "gallery/outdoor-closeup.jpg"
