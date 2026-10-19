@@ -62,7 +62,7 @@ care:
           title: "Bathroom breaks"
           text: >-
             Take him out every 4–5 hours starting right when you get him out of the crate in the morning. He does not whine or otherwise signal
-            when he needs to pee, so do not wait for him to ask. All he does is stare at you creepily and silently. Don't use pee pads, please. Also note that although he is house trained, if another dog has peed indoors before, he may try to mark that spot (wraps provided just in case).
+            when he needs to pee, so do not wait for him to ask. All he does is stare at you creepily and silently. Don't use pee pads, please. Also note that although he is house trained, if another dog has peed indoors before, he may try to mark that spot (wraps and enzyme cleaner provided just in case).
 
         - image: "cards/crate-routine-winston.png"
           emoji: "💤"
@@ -130,6 +130,12 @@ care:
             leash tangles easily. He loves children/babies and regularly sees my 3-year-old brother, but gets too
             excited around them. His behavior with cats is unknown because he has
             never been introduced to one.
+
+        - image: "cards/picking-him-up-winston.png"
+          emoji: "🙅"
+          title: "Picking him up"
+          text: >-
+            Avoid picking him up unless necessary because he doesn't like it (especially when he's tired). If you do need to lift him, such as into/out of the car, use his 'stand' command and support both his chest and his butt.
 
         - image: "cards/resource-guarding-winston.png"
           emoji: "🧻"
