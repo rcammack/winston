@@ -5,8 +5,8 @@ profile:
   - title: "Age"
     value: "2025-02-23"
     calculate_age: true
-  - title: "Weight"
-    value: "13 lbs"
+  - title: "AKC training"
+    value: "Canine Good Citizen certified"
   - title: "Potty breaks"
     value: "Every 4–5 hours"
   - title: "Training"
@@ -22,26 +22,11 @@ hero:
   name: "Winston."
   intro: >-
     I'm a unique mix of angel and menace looking for a
-    kind sitter who understands dog behavior and will keep my tail wagging. My owner is a crazy dog mom who made this website for me.
+    kind sitter who understands dog behavior and will keep my tail wagging. I will happily accepts pets from anyone, including strangers, and I'm smart so I know a lot of tricks. My owner is a crazy dog mom who made this website for me.
   care_button: "Read my care guide"
   contact_button: "Contact my humans"
   image: "winston.png"
   image_description: "Winston, a happy dog"
-
-# ABOUT SECTION — displayed with the header "A little about me"
-about:
-  heading: "Smart, curious, and loves getting pets from strangers."
-  description: >-
-    Winston is a smart, medium-energy mix of Miniature Poodle, Pomeranian,
-    Papillon, and Bichon Frise. He loves fetch and happily accepts pets from
-    anyone, including strangers. His excitement can come out as barking, so calm, attentive handling helps him feel
-    secure.
-  traits:
-    - "House trained"
-    - "Crate trained"
-    - "Neutered"
-    - "Microchipped"
-    - "AKC Canine Good Citizen certified"
 
 # CARE GUIDE SECTION — displayed with the header "The important stuff"
 care:

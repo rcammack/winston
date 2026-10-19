@@ -202,35 +202,11 @@ h1 {
   font-size: 1rem;
 }
 
-.about {
-  display: grid;
-  gap: var(--section-column-gap);
-  grid-template-columns: 1fr 1fr;
-}
-
-.about-copy > p,
 .skills > div > p:not(.eyebrow),
 .section-heading > p,
 .contact p {
   color: var(--muted);
   line-height: 1.75;
-}
-
-.traits {
-  display: grid;
-  gap: 12px 24px;
-  grid-template-columns: 1fr 1fr;
-  list-style: none;
-  margin: 32px 0 0;
-  padding: 0;
-}
-
-.traits li {
-  color: var(--ink);
-  display: grid;
-  font-weight: 700;
-  gap: 0.35em;
-  grid-template-columns: auto 1fr;
 }
 
 .care {
@@ -345,7 +321,6 @@ h1 {
   grid-template-columns: 1fr;
 }
 
-.about > div:first-child > :last-child,
 .section-heading > p,
 .skills > div:first-child > :last-child,
 .contact > div:first-child > :last-child {
@@ -671,7 +646,6 @@ footer span {
     padding-top: 0;
   }
 
-  .about,
   .skills,
   .contact {
     gap: var(--section-content-gap);
@@ -762,8 +736,7 @@ footer span {
   }
 
   .quick-facts,
-  .care-grid,
-  .traits {
+  .care-grid {
     grid-template-columns: 1fr;
   }
 

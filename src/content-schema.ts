@@ -30,11 +30,6 @@ const contentSchema = z.object({
     image: z.string().min(1),
     image_description: z.string().min(1),
   }),
-  about: z.object({
-    heading: z.string().min(1),
-    description: z.string().min(1),
-    traits: z.array(z.string().min(1)).min(1),
-  }),
   care: z.object({
     heading: z.string().min(1),
     description: z.string().min(1),

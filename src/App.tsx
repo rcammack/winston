@@ -1,6 +1,5 @@
 import './styles/shared.css'
 import './App.css'
-import AboutSection from './components/AboutSection'
 import CareGuide from './components/CareGuide'
 import CommandsSection from './components/CommandsSection'
 import ContactSection from './components/ContactSection'
@@ -17,7 +16,6 @@ function App() {
       <main id="top">
         <Hero />
         <QuickFacts />
-        <AboutSection />
         <CareGuide />
         <CommandsSection />
         <PhotoGallery />

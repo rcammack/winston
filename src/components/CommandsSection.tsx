@@ -22,6 +22,7 @@ function CommandsSection() {
   return (
     <section
       className="section skills"
+      id="commands"
       onKeyDown={(event) => {
         if (event.key === 'Escape') {
           setHoveredCommand(null)

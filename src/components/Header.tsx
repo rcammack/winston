@@ -7,8 +7,8 @@ function Header() {
         <span aria-hidden="true">🐾</span> {content.site.brand}
       </a>
       <nav aria-label="Main navigation">
-        <a href="#about">About</a>
         <a href="#care">Care guide</a>
+        <a href="#commands">Commands</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
